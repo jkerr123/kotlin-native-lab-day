@@ -4,6 +4,7 @@ plugins {
 repositories {
     google()
     jcenter()
+    maven { url "https://dl.bintray.com/kotlin/ktor/" }
     maven { url 'https://dl.bintray.com/kotlin/kotlin-eap' }
 }
 group 'com.example'
@@ -24,6 +25,7 @@ kotlin {
         commonMain {
             dependencies {
                 implementation 'org.jetbrains.kotlin:kotlin-stdlib-common'
+                
             }
         }
         commonTest {

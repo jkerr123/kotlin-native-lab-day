@@ -1,6 +1,8 @@
 #import <Foundation/Foundation.h>
 
-@class Common2Sample, Common2Platform;
+@class Common2Sample, Common2Platform, Common2Filter;
+
+@protocol Common2FilterLogic;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -154,6 +156,23 @@ __attribute__((swift_name("Platform")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)platform __attribute__((swift_name("init()")));
 - (NSString *)name __attribute__((swift_name("name()")));
+@end;
+
+__attribute__((swift_name("FilterLogic")))
+@protocol Common2FilterLogic
+@required
+- (NSArray<NSString *> *)filterLengthInput:(NSArray<NSString *> *)input limit:(int32_t)limit __attribute__((swift_name("filterLength(input:limit:)")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Filter")))
+@interface Common2Filter : KotlinBase <Common2FilterLogic>
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+@end;
+
+@interface Common2Filter (Extensions)
+- (NSArray<NSString *> *)toLowerCaseInput:(NSArray<NSString *> *)input __attribute__((swift_name("toLowerCase(input:)")));
 @end;
 
 __attribute__((objc_subclassing_restricted))
