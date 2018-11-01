@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common2.iml" filepath="$PROJECT_DIR$/.idea/modules/common2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common_commonMain.iml" filepath="$PROJECT_DIR$/.idea/modules/common_commonMain.iml" group="common" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common_commonTest.iml" filepath="$PROJECT_DIR$/.idea/modules/common_commonTest.iml" group="common" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common_jsMain.iml" filepath="$PROJECT_DIR$/.idea/modules/common_jsMain.iml" group="common" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common_jsTest.iml" filepath="$PROJECT_DIR$/.idea/modules/common_jsTest.iml" group="common" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common_jvmMain.iml" filepath="$PROJECT_DIR$/.idea/modules/common_jvmMain.iml" group="common" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common_jvmTest.iml" filepath="$PROJECT_DIR$/.idea/modules/common_jvmTest.iml" group="common" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common_macosMain.iml" filepath="$PROJECT_DIR$/.idea/modules/common_macosMain.iml" group="common" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common_macosTest.iml" filepath="$PROJECT_DIR$/.idea/modules/common_macosTest.iml" group="common" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/native.iml" filepath="$PROJECT_DIR$/.idea/modules/native.iml" />
+    </modules>
+  </component>
+</project>
